@@ -1,11 +1,11 @@
 {
   "id": "5f1f9a8e-3092-4c0a-9ee8-ba50ae5abd15",
   "version": "2.0",
-  "name": "Imp",
+  "name": "Impfterminfinder",
   "url": "https://sachsen.impfterminvergabe.de/civ.public/start.html?oe=00.00.IM&mode=cc&cc_key=IOAktion",
   "tests": [{
     "id": "57dd9bcf-c52e-4e3e-bbb7-3ccd3877fc18",
-    "name": "Impfen",
+    "name": "Impfterminfinder",
     "commands": [{
       "id": "21a33738-15b9-49bb-bfe7-63046c46f0e3",
       "comment": "",
