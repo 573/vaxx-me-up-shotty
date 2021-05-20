@@ -1,10 +1,9 @@
 # vaxx-me-up-shotty
 Tool to get vaccinated ASAP
 
-
-Die Datei impf.side wird in einer Browsererweiterung geladen und diese dann ausgeführt. Diese Browsererweiterung gibt es hier, bitte im Browser installieren:
-https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/ (Firefoxbrowser) bzw. hier
-https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd (Chromebrowser)
+Die Datei [impf.side](/../../raw/main/impf.side) wird in einer Browsererweiterung geladen und diese dann ausgeführt. Diese Browsererweiterung gibt es hier, bitte im Browser installieren:
+* <a href="https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/" target="_blank" rel="noopener">Firefoxbrowser</a>
+* <a href="https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd" target="_blank" rel="noopener">Chromebrowser</a>
 
 NUTZERKENNUNG und PASSWORT vor Ausführen des Tests ersetzen, wie folgt:
 In der Selenium-IDE mit geladenem Script in Spalte "Value" `hier Vorgangskennung eingeben` bzw. `hier Passwort eingeben` ersetzen durch Eure Daten.
