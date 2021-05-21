@@ -1,0 +1,303 @@
+{
+  "id": "5f1f9a8e-3092-4c0a-9ee8-ba50ae5abd15",
+  "version": "2.0",
+  "name": "Impfterminfinder",
+  "url": "https://sachsen.impfterminvergabe.de/civ.public/start.html?oe=00.00.IM&mode=cc&cc_key=IOAktion",
+  "tests": [{
+    "id": "57dd9bcf-c52e-4e3e-bbb7-3ccd3877fc18",
+    "name": "Impfterminfinder",
+    "commands": [{
+      "id": "21a33738-15b9-49bb-bfe7-63046c46f0e3",
+      "comment": "",
+      "command": "open",
+      "target": "https://sachsen.impfterminvergabe.de/civ.public/start.html?oe=00.00.IM&mode=cc&cc_key=IOAktion",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98d588f6-e3a7-4022-a67a-36573f841891",
+      "comment": "WillkommenWeiter-Button",
+      "command": "//click",
+      "target": "xpath=//span[text()='Weiter']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43cf0f5f-f953-4f38-9e89-655d3103f319",
+      "comment": "Vorgangskennung-Feld",
+      "command": "click",
+      "target": "xpath=//label[text()='Vorgangskennung*']",
+      "targets": [
+        ["id=gwt-uid-7", "id"],
+        ["css=#gwt-uid-7", "css:finder"],
+        ["xpath=//input[@id='gwt-uid-7']", "xpath:attributes"],
+        ["xpath=//div[@id='AppTextField-9742']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a52124f1-34ec-4300-98c6-667f50010f13",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//label[text()='Vorgangskennung*']/following-sibling::input",
+      "targets": [
+        ["id=gwt-uid-7", "id"],
+        ["css=#gwt-uid-7", "css:finder"],
+        ["xpath=//input[@id='gwt-uid-7']", "xpath:attributes"],
+        ["xpath=//div[@id='AppTextField-9742']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hier Vorgangskennung eingeben"
+    }, {
+      "id": "86834666-ad63-489d-b63f-8aab420d2c27",
+      "comment": "Passwort-Feld",
+      "command": "click",
+      "target": "xpath=//label[text()='Passwort*']",
+      "targets": [
+        ["id=gwt-uid-9", "id"],
+        ["css=#gwt-uid-9", "css:finder"],
+        ["xpath=//input[@id='gwt-uid-9']", "xpath:attributes"],
+        ["xpath=//div[@id='AppTextField-9896']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0df7b75-60e0-49d6-af04-81e96dd24fbf",
+      "comment": "",
+      "command": "//waitForElementNotPresent",
+      "target": "xpath=//span[text() = 'Fehler: Eingabe erforderlich.']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "3ff9eb59-6843-486d-b509-6191b6376efa",
+      "comment": "Warte 30 Sekunden bis das Passwort fertig getippt wurde.",
+      "command": "//pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f51bc5fd-474f-4d54-af89-d30c221d8e2e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//label[text()='Passwort*']/following-sibling::input",
+      "targets": [],
+      "value": "hier Passwort eingeben"
+    }, {
+      "id": "0552983f-03d5-46ae-9b8a-db5e30dc5ea9",
+      "comment": "",
+      "command": "pause",
+      "target": "7000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf8b83f2-1442-45a2-a638-412f1cc376d9",
+      "comment": "LoginWeiter-Button",
+      "command": "click",
+      "target": "xpath=//span[text()='Weiter']",
+      "targets": [
+        ["id=WorkflowButton-4164", "id"],
+        ["css=#WorkflowButton-4164", "css:finder"],
+        ["xpath=//button[@id='WorkflowButton-4164']", "xpath:attributes"],
+        ["xpath=//div[@id='1-4137']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "150c5bc1-099d-49b5-816b-ee44f7407eaf",
+      "comment": "VereinbarenAendernWaehlen",
+      "command": "click",
+      "target": "css=.gwt-RadioButton:nth-child(2) > label",
+      "targets": [
+        ["css=.gwt-RadioButton:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[@id='RadioButtonField-11290']/span[2]/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'(1) Termin zur Coronaschutzimpfung vereinbaren oder ändern')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "419aa796-3bab-4263-b7a4-9a90456385ed",
+      "comment": "TerminAktionWeiter-Button",
+      "command": "click",
+      "target": "xpath=//span[text()='Weiter']",
+      "targets": [
+        ["id=WorkflowButton-4164", "id"],
+        ["css=#WorkflowButton-4164", "css:finder"],
+        ["xpath=//button[@id='WorkflowButton-4164']", "xpath:attributes"],
+        ["xpath=//div[@id='1-4137']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8c224a9-dfe8-40d3-a407-c285e2790d8a",
+      "comment": "ImpfcenterAuswahl",
+      "command": "click",
+      "target": "xpath=(//span[@class='select2-selection__arrow'])[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01c4638c-6895-4eb2-a0c7-a7bc4530d2c5",
+      "comment": "Leipzig wählen",
+      "command": "click",
+      "target": "xpath=//li[text() = 'Messe Leipzig, Messe-Allee 1, 04356 Leipzig ']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee2e29ee-ce45-4af9-9d39-648ebe473205",
+      "comment": "DatumWaehlen",
+      "command": "click",
+      "target": "xpath=//label[text()='Ab wann soll nach einem freien Termin gesucht werden*']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "890d574c-510c-42fc-9aba-75bbb6bac6c6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(.//tr/td/div[contains(@class,'datePickerDayIsToday')]/../../following-sibling::tr/td/div | .//td/div[contains(@class,'datePickerDayIsToday')]/../following-sibling::td/div)[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85b0f9e6-8757-4454-a4b4-65388d24c85c",
+      "comment": "TermindetailsWeiter",
+      "command": "click",
+      "target": "xpath=//span[text()='Weiter']",
+      "targets": [
+        ["css=#WorkflowButton-4164 > span", "css:finder"],
+        ["xpath=//button[@id='WorkflowButton-4164']/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27c1599a-de0a-4881-a6f6-714a9e191b60",
+      "comment": "",
+      "command": "times",
+      "target": "480",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cf8b19b-5205-4540-b94a-291dbdeee067",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@class = 'right btn disabled']",
+      "targets": [],
+      "value": "disabledBtn"
+    }, {
+      "id": "17a7ff1a-279e-4f45-b3b5-0ee172d225fa",
+      "comment": "",
+      "command": "if",
+      "target": "${disabledBtn}<1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f79a6b6b-c5df-4004-9007-e685e26577a3",
+      "comment": "WeiterButton",
+      "command": "click",
+      "target": "id=1-4137",
+      "targets": [
+        ["id=1-4137", "id"],
+        ["css=#\\31-4137", "css:finder"],
+        ["xpath=//div[@id='1-4137']", "xpath:attributes"],
+        ["xpath=//div[2]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79fb25e9-dc90-4b33-bd45-f21acce40ced",
+      "comment": "WeiterButton",
+      "command": "click",
+      "target": "xpath=//span[text()='Weiter']",
+      "targets": [
+        ["id=WorkflowButton-4164", "id"],
+        ["css=#WorkflowButton-4164", "css:finder"],
+        ["xpath=//button[@id='WorkflowButton-4164']", "xpath:attributes"],
+        ["xpath=//div[@id='1-4137']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a75bddf-4f7f-4f49-aa0c-db82e5e97763",
+      "comment": "ACHTUNG: // wegmachen und <pause millisec> statt assert, wenn manuelle Prüfung gewollt",
+      "command": "//assert",
+      "target": "1===0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f940ce19-7529-4837-8782-e9a53c7d0086",
+      "comment": "AbsendenButton",
+      "command": "click",
+      "target": "id=WorkflowButton-4164",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33a9abe1-570c-4ebd-b52e-87cdeba9e8b9",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cc8f575-551d-4237-87e6-a5f80d0fe655",
+      "comment": "ZurueckButton",
+      "command": "click",
+      "target": "xpath=//span[text()='Zurück']",
+      "targets": [
+        ["css=#WorkflowButton-4207 > span", "css:finder"],
+        ["xpath=//button[@id='WorkflowButton-4207']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3dd6756-3999-48c3-9431-d053a7ace28d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d5f9ef6-dc34-42f9-b83a-9f66767469b9",
+      "comment": "Warte Minute",
+      "command": "pause",
+      "target": "60000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65b85bd3-e674-4dc6-9115-5aa2dba9e53a",
+      "comment": "DatumWaehlen",
+      "command": "click",
+      "target": "//label[text()='Ab wann soll nach einem freien Termin gesucht werden*']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d2ae9ad-ae53-4115-abf6-7ce06c4e37e0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(.//tr/td/div[contains(@class,'datePickerDayIsToday')]/../../following-sibling::tr/td/div | .//td/div[contains(@class,'datePickerDayIsToday')]/../following-sibling::td/div)[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d12499fc-2e84-4afc-b924-64c9c26dd4ed",
+      "comment": "WeiterButtonNochmal",
+      "command": "click",
+      "target": "xpath=//span[text()='Weiter']",
+      "targets": [
+        ["css=#WorkflowButton-4164 > span", "css:finder"],
+        ["xpath=//button[@id='WorkflowButton-4164']/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "031fdc2b-357c-4db9-85e0-f86a47ce6e86",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1add547f-89e3-42eb-af3b-9f53757ed148",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["57dd9bcf-c52e-4e3e-bbb7-3ccd3877fc18"]
+  }],
+  "urls": ["https://sachsen.impfterminvergabe.de/civ.public/start.html?oe=00.00.IM&mode=cc&cc_key=IOAktion"],
+  "plugins": []
+}
