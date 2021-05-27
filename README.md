@@ -1,4 +1,4 @@
-# vaxx-me-up-shotty
+# vaxx-me-up-shotty (tl;dr [impf.side runterladen](/../../raw/main/impf.side) und in Selenium IDE öffnen)
 Tool to get vaccinated ASAP
 
 Das Script bzw. die Datei [impf.side](/../../raw/main/impf.side) wird in einer Browsererweiterung geladen und diese dann ausgeführt. Diese Browsererweiterung gibt es hier, bitte im Browser installieren:
