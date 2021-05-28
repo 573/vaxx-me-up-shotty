@@ -7,7 +7,7 @@ Registrierung im Impfportal Sachsen [hier](https://sachsen.impfterminvergabe.de/
 
 >Aufgrund der vielen Anfragen befinden Sie sich aktuell in der Warteschlange. Sie werden automatisch weitergeleitet, sobald Kapazitäten frei werden. Wir bitten um etwas Geduld.
 
-Dann bitte zu einem anderen Zeitpunkt ([Zeittafel beachten](https://drksachsen.de/)) erneut versuchen. Trifft auch für bereits registrierte Nutzer zu, wenn das Script mit dieser Portalseite blockiert wird.
+Dann das Script noch zuende laufen lassen (falls das Impfportal innerhalb des Timeout-Intervalls noch die Loginseite lädt), dann bitte ggf. zu einem anderen Zeitpunkt ([Zeittafel beachten](https://drksachsen.de/)) erneut versuchen. Trifft auch für bereits registrierte Nutzer zu, wenn das Script mit dieser Portalseite blockiert wird.
 ![drktermine (https://drksachsen.de/)](https://user-images.githubusercontent.com/123878/119958123-063a7180-bfa3-11eb-8cee-fd10179c9306.png)
 
 Das Script bzw. die Datei [impf.side](/../../raw/main/impf.side) wird in einer Browsererweiterung geladen und diese dann ausgeführt. Diese Browsererweiterung gibt es hier, bitte im Browser installieren:
