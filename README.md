@@ -22,6 +22,10 @@ Step 3 - *Passwort* ändern
 Step 4 - Ausführung des Scripts via *Run current test* starten
 ![Im-Script-Ausführen](https://user-images.githubusercontent.com/123878/112589138-e18a1800-8e00-11eb-8e02-a68b0e005782.png)
 
+## Alternativen
+
+[Hier](https://impfee.ch/site/) gibt es Impfdosen, die sonst verfallen würden.
+
 ## Probleme / Anregungen
 Nutzt bitte den [issues tracker](/../../issues) oder regt [eine Diskussion](/../../discussions) an.
 
