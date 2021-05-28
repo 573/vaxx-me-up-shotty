@@ -21,6 +21,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "7838b846-db40-4b91-b679-1b28070c7b12",
+      "comment": "Falls das Portal ausgelastet ist, warten (max. 1hs)",
+      "command": "waitForElementVisible",
+      "target": "xpath=//label[text()='Vorgangskennung*']",
+      "targets": [],
+      "value": "3600000"
+    }, {
       "id": "43cf0f5f-f953-4f38-9e89-655d3103f319",
       "comment": "Vorgangskennung-Feld",
       "command": "click",
