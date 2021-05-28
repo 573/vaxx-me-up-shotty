@@ -172,24 +172,31 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "9cf8b19b-5205-4540-b94a-291dbdeee067",
+      "id": "36b607c6-6521-40bc-9766-a10dfb4639da",
       "comment": "",
-      "command": "storeXpathCount",
-      "target": "xpath=//*[@class = 'right btn disabled']",
+      "command": "pause",
+      "target": "30000",
       "targets": [],
-      "value": "disabledBtn"
+      "value": ""
+    }, {
+      "id": "9cf8b19b-5205-4540-b94a-291dbdeee067",
+      "comment": "ggf. sogar //button[contains(@id, 'WorkflowButton-')] hier",
+      "command": "storeXpathCount",
+      "target": "xpath=//button",
+      "targets": [],
+      "value": "btnCount"
     }, {
       "id": "17a7ff1a-279e-4f45-b3b5-0ee172d225fa",
       "comment": "",
       "command": "if",
-      "target": "${disabledBtn}<1",
+      "target": "${btnCount}>1",
       "targets": [],
       "value": ""
     }, {
       "id": "f79a6b6b-c5df-4004-9007-e685e26577a3",
-      "comment": "WeiterButton",
+      "comment": "WeiterButton zur Terminbestätigung",
       "command": "click",
-      "target": "id=1-4137",
+      "target": "xpath=//span[text()='Weiter']",
       "targets": [
         ["id=1-4137", "id"],
         ["css=#\\31-4137", "css:finder"],
@@ -199,7 +206,7 @@
       "value": ""
     }, {
       "id": "79fb25e9-dc90-4b33-bd45-f21acce40ced",
-      "comment": "WeiterButton",
+      "comment": "WeiterButton Bestätigung absenden",
       "command": "click",
       "target": "xpath=//span[text()='Weiter']",
       "targets": [
@@ -221,7 +228,7 @@
       "id": "f940ce19-7529-4837-8782-e9a53c7d0086",
       "comment": "AbsendenButton",
       "command": "click",
-      "target": "id=WorkflowButton-4164",
+      "target": "xpath=//span[text()='Weiter']",
       "targets": [],
       "value": ""
     }, {
@@ -253,14 +260,14 @@
       "id": "7d5f9ef6-dc34-42f9-b83a-9f66767469b9",
       "comment": "Warte Minute",
       "command": "pause",
-      "target": "60000",
+      "target": "30000",
       "targets": [],
       "value": ""
     }, {
       "id": "65b85bd3-e674-4dc6-9115-5aa2dba9e53a",
       "comment": "DatumWaehlen",
       "command": "click",
-      "target": "//label[text()='Ab wann soll nach einem freien Termin gesucht werden*']",
+      "target": "xpath=//label[text()='Ab wann soll nach einem freien Termin gesucht werden*']",
       "targets": [],
       "value": ""
     }, {
