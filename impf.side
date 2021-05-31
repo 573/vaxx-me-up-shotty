@@ -157,7 +157,7 @@
       "id": "890d574c-510c-42fc-9aba-75bbb6bac6c6",
       "comment": "",
       "command": "click",
-      "target": "xpath=(.//tr/td/div[contains(@class,'datePickerDayIsToday')]/../../following-sibling::tr/td/div | .//td/div[contains(@class,'datePickerDayIsToday')]/../following-sibling::td/div)[1]",
+      "target": "xpath=(.//tr/td/div[contains(@class,'datePickerDayIsToday')]/../../following-sibling::tr/td/div | .//td/div[contains(@class,'datePickerDayIsToday')]/../following-sibling::td/div)[1] | //div[contains(@aria-selected,'true')]",
       "targets": [],
       "value": ""
     }, {
@@ -281,7 +281,7 @@
       "id": "4d2ae9ad-ae53-4115-abf6-7ce06c4e37e0",
       "comment": "",
       "command": "click",
-      "target": "xpath=(.//tr/td/div[contains(@class,'datePickerDayIsToday')]/../../following-sibling::tr/td/div | .//td/div[contains(@class,'datePickerDayIsToday')]/../following-sibling::td/div)[1]",
+      "target": "xpath=(.//tr/td/div[contains(@class,'datePickerDayIsToday')]/../../following-sibling::tr/td/div | .//td/div[contains(@class,'datePickerDayIsToday')]/../following-sibling::td/div)[1] | //div[contains(@aria-selected,'true')]",
       "targets": [],
       "value": ""
     }, {
